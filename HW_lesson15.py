@@ -2,7 +2,6 @@ import os
 import cv2
 import shutil
 
-# --- Налаштування шляхів ---
 PROJECT_DIR = os.path.dirname(__file__)
 IMAGES_DIR = os.path.join(PROJECT_DIR, "images")
 MODELS_DIR = os.path.join(PROJECT_DIR, "models")
@@ -128,4 +127,5 @@ for filename in files:
 print("\nГотово!")
 print(f"Фото з людьми: {count_images_with_people}")
 print(f"Фото без людей: {count_images_no_people}")
+
 print(f"Результати збережено в: {OUT_DIR}")
